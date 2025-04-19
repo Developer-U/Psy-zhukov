@@ -1,0 +1,132 @@
+body .accordionjs .acc_section {
+    border: 1px solid #4D91D0;
+    background-color: #B6EBFF;
+    border-radius: 30px;
+    margin-bottom: 18px;
+    z-index: 2;
+}
+
+body .accordionjs .acc_section:last-of-type {
+    margin-bottom: 0;
+}
+
+body .accordionjs .acc_section .acc_head {
+    font-size: 18px;
+    line-height: 130%;
+    font-family: var(--font_semibold);
+    padding: 12px 65px 15px 30px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+body .accordionjs .acc_section .acc_head span {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    background: url('../img/arrow-down.svg') no-repeat center/contain;
+    transition: transform .4s ease-in;
+}
+
+body .accordionjs .acc_section .acc_head span.active {
+    /* transform: rotate(45deg); */
+    transform: rotate(-90deg);
+    transition: transform .15s ease-in-out;
+}
+
+body .accordionjs .acc_section .acc_content {
+    padding: 0 20px 30px 20px;
+}
+
+body .accordionjs .acc_section.acc_active>.acc_head {
+    background: #B6EBFF;
+    border-bottom: none;
+}
+
+@media (min-width:1921px) {
+    body .accordionjs .acc_section .acc_head {
+        font-size: 0.75vw;
+        padding: 0.5vw 100px 0.48vw 0.8vw;
+    }
+
+    body .accordionjs .acc_section .acc_content {
+        padding: 0 1vw 1vw 0.9vw;
+    }
+
+    .service-item__arrow {
+        width: 1vw;
+        height: 1vw;
+        right: -1.2vw;
+    }
+}
+
+@media (max-width:1399px) {
+    body .accordionjs .acc_section .acc_head {
+        font-size: 21px;
+    }
+}
+
+@media (max-width:1199px) {
+    body .accordionjs .acc_section .acc_head span {
+        width: 35px;
+        height: 35px;
+    }
+
+    body .accordionjs .acc_section {
+        margin-bottom: 20px;
+    }
+
+    body .accordionjs .acc_section .acc_head {
+        font-size: 19px;
+    }
+}
+
+@media (max-width:991px) {
+    body .accordionjs .acc_section .acc_head span, .service-item__arrow {
+        width: 30px;
+        height: 30px;
+    }
+
+    body .accordionjs .acc_section .acc_head {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:930px) and (max-height:420px) {
+    body .accordionjs .acc_section .acc_head {
+        font-size: 16px;
+        padding-bottom: 13px;
+    }
+
+    body .accordionjs .acc_section .acc_head span, .service-item__arrow {
+        top: 29%;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width:767px) {
+    body .accordionjs .acc_section .acc_head {
+        font-size: 16px;
+        padding-bottom: 13px;
+    }
+
+    body .accordionjs .acc_section .acc_head span, .service-item__arrow {
+        top: 29%;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width:439px) {
+    body .accordionjs .acc_section .acc_head {
+        font-size: 16px;
+    }
+
+    body .accordionjs .acc_section .acc_head {
+        font-size: 15px;
+    }
+}

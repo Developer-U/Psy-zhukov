@@ -1,0 +1,228 @@
+/*
+* Styles for Contact Form 7
+*/
+
+
+form input.input-form {
+    /* width: 100%; */
+    height: 30px;
+    text-align: left;
+    padding: 6px 18px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background: var(--white);
+    border: 1px solid var(--light_purple);
+}
+
+form input.input-form, form input.input-form::placeholder, form .textarea, .input-form textarea::placeholder {
+    color: var(--light_purple);
+    font-size: 12px;
+}
+
+form input.input-form:focus, form .textarea:focus {
+    border: 1px solid var(--black);
+    background: var(--white);
+}
+
+form .input-form.textarea {
+    height: 60px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 6px 18px;
+    background: var(--white);
+}
+
+.quiz_captcha span[data-name="math-quiz"]>label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quiz_captcha span[data-name="math-quiz"]>label input.wpcf7-quiz {
+    height: 30px;
+    border: 1px solid var(--black);
+    width: 100px;
+}
+
+.cta-wrapper form input.input-form, .cta-wrapper form .input-form.textarea {
+    background: var(--white);
+}
+
+.popup__form form p {
+    margin-bottom: 0;
+}
+
+.quiz_captcha {
+    margin-bottom: 10px;
+}
+
+.inputs-radio-wrap .quiz_captcha {
+    margin-bottom: 0;
+}
+
+.inputs-radio-wrap .quiz_captcha>p {
+    margin-bottom: 0;
+}
+
+.agree-wrap {
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    margin-bottom: 10px;
+}
+
+span.wpcf7-list-item input[type="checkbox"] {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 6px;
+}
+
+.agree+span.wpcf7-list-item-label {
+    font-size: 12px;
+    line-height: 120%;
+    margin-left: 13px;
+    display: inline-block;
+    color: var(--black);
+    margin-top: 6px;
+    font-family: var(--font_regular);
+}
+
+.cta-form .agree+span.wpcf7-list-item-label {
+    margin-left: 12px;
+    max-width: 249px;
+    margin-bottom: 10px;
+}
+
+.cta-form__form2.cta-form .agree+span.wpcf7-list-item-label {
+    max-width: 100%;
+}
+
+.agree+span.wpcf7-list-item-label a {
+    color: var(--dark_blue);
+    text-decoration: underline;
+}
+
+.white-agree .agree+span.wpcf7-list-item-label, .white-agree .agree+span.wpcf7-list-item-label a,
+.faq-sidebar .agree+span.wpcf7-list-item-label, .faq-sidebar .agree+span.wpcf7-list-item-label a {
+    color: var(--white);
+    font-family: var(--font_regular);
+}
+
+.popup__form form p {
+    margin-bottom: 0;
+    position: relative;
+}
+
+form .wpcf7-form-control-wrap {
+    position: static;
+}
+
+.popup form .wpcf7-form-control-wrap {
+    margin-bottom: 14px;
+    display: block;
+}
+
+.wpcf7 form .wpcf7-not-valid-tip {
+    font-size: 12px;
+    font-style: normal;
+    margin-top: 0;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    font-size: 12px !important;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output {
+    border-color: red !important;
+}
+
+.route-item__form form input.wpcf7-submit {
+    margin-bottom: 0;
+}
+
+body .input-radio>span>label {
+    display: flex !important;
+    gap: 9px;
+}
+
+body .input-radio input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+body .input-radio input[type="radio"]+span.wpcf7-list-item-label {
+    font-family: var(--font_regular);
+    font-size: 14px;
+}
+
+.inputs-radio-wrap {
+    gap: 60px;
+}
+
+body .inputs-wrap .wpcf7-spinner {
+    position: absolute;
+    bottom: -26px;
+    right: 0;
+}
+
+.inputs-wrap.agreement>p {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+body .wpcf7-list-item>label, body .wpcf7-list-item>label:not(.wpcf7-form-control-wrap) {
+    display: flex;
+}
+
+@media (min-width:1921px) {
+    form input.input-form {
+        height: 1.6vw;
+        padding: 0.5vw 0.8vw;
+        border-radius: 0.2vw;
+    }
+
+    form input.input-form, form input.input-form::placeholder, form .textarea, .input-form textarea::placeholder {
+        font-size: 0.7vw;
+    }
+
+    .input-city {
+        max-width: 9vw;
+    }
+
+    .agree+span.wpcf7-list-item-label {
+        font-size: 0.5vw;
+    }
+
+    .faq-sidebar .inputs-wrap {
+        max-width: 14vw;
+    }
+}
+
+@media (max-width:1785px) {
+    .agree+span.wpcf7-list-item-label {
+        font-size: 12px;
+    }    
+}
+
+@media (max-width:1399px) {
+    .agree+span.wpcf7-list-item-label {
+        font-size: 11px;
+    }   
+}
+
+@media (max-width:1199px) {
+    .agree+span.wpcf7-list-item-label {
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width:930px) and (max-height: 420px) {   
+
+}
+
+@media (max-width:767px) {   
+}
+

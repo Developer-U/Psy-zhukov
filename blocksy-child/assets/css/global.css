@@ -1,0 +1,349 @@
+/*Global*/
+
+@font-face {
+    font-family: 'Geologica-Bold';
+    src:
+        url('../fonts/Geologica-Bold.woff2') format('woff2'),
+        url('../fonts/Geologica-Bold.woff') format('woff'),
+        url('../fonts/Geologica-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geologica-Light';
+    src:
+        url('../fonts/Geologica-Light.woff2') format('woff2'),
+        url('../fonts/Geologica-Light.woff') format('woff'),
+        url('../fonts/Geologica-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geologica-Regular';
+    src:
+        url('../fonts/Geologica-Regular.woff2') format('woff2'),
+        url('../fonts/Geologica-Regular.woff') format('woff'),
+        url('../fonts/Geologica-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geologica-SemiBold';
+    src:
+        url('../fonts/Geologica-SemiBold.woff2') format('woff2'),
+        url('../fonts/Geologica-SemiBold.woff') format('woff'),
+        url('../fonts/Geologica-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geologica-Thin';
+    src:
+        url('../fonts/Geologica-Thin.woff2') format('woff2'),
+        url('../fonts/Geologica-Thin.woff') format('woff'),
+        url('../fonts/Geologica-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lobster-Regular';
+    src:
+        url('../fonts/Lobster-Regular.woff2') format('woff2'),
+        url('../fonts/Lobster-Regular.woff') format('woff'),
+        url('../fonts/Lobster-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+:root {
+    --black: #201C43;
+    --white: #ffffff;
+    --purple: #7D6FFB;
+    --light_purple: #7A779F;
+    --blue: #76D0E9;
+    --dark_blue: #38415D;
+    --pink: #F33672;
+    --grey: #999999;
+    --light_blue: #B6EBFF;
+    --light-grey: #ECF6FF;
+    --font_light: 'Geologica-Light', serif;
+    --font_regular: 'Geologica-Regular', serif;
+    --font_bold: 'Geologica-Bold', serif;
+    --font_semibold: 'Geologica-SemiBold', serif;
+    --font_thin: 'Geologica-Thin', serif;
+    --lobster: 'Lobster-Regular', serif;
+}
+
+html, body, body p {
+    font-family: var(--font_light);
+}
+
+html, body {
+    overflow-x: auto;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--dark_blue);
+}
+
+body p {
+    margin-bottom: initial;
+    color: var(--dark_blue);
+}
+
+body p strong {
+    font-family: var(--font_semibold);
+}
+
+body .container {
+    max-width: 1465px;
+}
+
+.closed {
+    overflow-y: hidden;
+    height: 100vh;
+}
+
+body .container-fluid {
+    max-width: 1706px;
+}
+
+figure {
+    overflow: hidden;
+}
+
+.post figure {
+    border-radius: 20px;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+
+figure img, a.gallery-tab-list__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body ul,
+body li {
+    list-style-type: none;
+    padding-left: 0;
+    /* margin-bottom: inherit; */
+}
+
+body .button {
+    font-family: var(--font_regular);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    font-size: 20px;
+    line-height: 120%;
+    background: linear-gradient(to top, var(--black), var(--purple));
+    width: fit-content;
+    min-height: 46px;
+    border-radius: 26px;
+    -webkit-box-shadow: 5px 5px 8px 8px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 5px 5px 8px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px 8px 8px rgba(0, 0, 0, 0.25);
+    transition: all .25s ease-in-out;
+}
+
+body .button.more-btn {
+    margin: 50px auto 0;
+    min-width: 272px;
+}
+
+body .button:hover, body .button>span:hover {
+    background: var(--black);
+    transition: all .25s ease-in-out;
+}
+
+body footer .button.city-choose-btn>span:hover,
+body .hero-pages-wrap .button.city-choose-btn:hover,
+body .hero-pages-wrap .button.city-choose-btn>span:hover {
+    background: initial;
+}
+
+body .button.active {
+    background: var(--purple);
+}
+
+section, footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section.dark {
+    background-color: var(--dark_blue); 
+}
+
+section.dark *, body footer * {
+    color: var(--white);
+}
+
+section.grey {
+    background-color: var(--light-grey);
+}
+
+.overlay::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 2px);
+    background: rgba(56, 65, 93, .6);
+}
+
+.overlay .container-fluid, .overlay .container {
+    position: relative;
+    z-index: 2;
+}
+
+.post blockquote {
+    margin-left: 56px;
+    padding: 26px;
+    margin-bottom: 26px;   
+    border-radius: 20px;
+    background-color: var(--light_purple);    
+}
+
+.post blockquote p {
+    color: var(--white);
+    font-family: var(--font_regular);
+}
+
+.post blockquote p:last-of-type {
+    margin-bottom: 0;
+}
+
+.post p:not(:last-of-type), .post ul, .post ol {
+    margin-bottom: 24px;
+}
+
+.post ul {
+    padding-left: 20px;
+}
+
+.post ol li {
+    list-style-type: inherit;
+}
+
+.post ul li {
+    padding-left: 0;
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+body h1 {
+    margin-bottom: 11px;
+    color: var(--white);
+    line-height: 115%;
+    font-family: var(--font_semibold);
+    font-size: 70px;
+}
+
+body h1.hero__title {
+    font-size: 60px;
+}
+
+body h1.hero-single__title {
+    margin-top: 46px;
+    margin-bottom: 31px;
+}
+
+body h1.error-404__title {
+    font-size: 110px;
+    margin-bottom: 3rem;
+}
+
+body h2 {
+    margin-bottom: 40px;
+    color: var(--black);
+    line-height: 120%;
+    font-family: var(--font_semibold);
+    font-size: 40px;
+}
+
+body .post h2 {
+    font-size: 18px;
+}
+
+body p {
+    font-size: 16px;
+    line-height: 121%;
+    font-family: var(--font_light);
+}
+
+.grid-two {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Media*/
+
+@media (min-width:1921px) {
+   
+}
+
+@media (max-width:1599px) {
+  
+}
+
+@media (max-width:1399px) {
+
+}
+
+@media (max-width:1199px) {
+
+}
+
+@media (max-width:991px) {
+
+}
+
+@media (max-width:930px) and (max-height:420px) {
+
+}
+
+@media (max-width:767px) {
+
+}
+
+@media (max-width:767px) and (max-height:420px) {
+ 
+}
+
+
+@media (max-width:439px) {
+
+}
+
+@media (max-width:374px) {
+
+}
