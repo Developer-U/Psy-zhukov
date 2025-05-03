@@ -11,10 +11,14 @@
       const btnClose = oneContent.querySelector('.main-reviews__item-less'); // кнопка скрыть
 
             
-      const heightOfContent = content.getBoundingClientRect().height; // вычисляем высоту текста
+      const heightOfContent = content.clientHeight; // вычисляем высоту текста
+
+      console.log(content);
+
+      console.log(heightOfContent);
       
 
-      if(heightOfContent >= 200) { // если высота становится более 201px, добавляем кнопку читать полностью                 
+      if(heightOfContent >= 145) { // если высота становится более 201px, добавляем кнопку читать полностью                 
           
         btn.classList.add('open');
         

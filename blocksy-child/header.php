@@ -48,7 +48,7 @@
 					<?php } ?>
 				</a>
 
-				<?php estore_primary_menu(); ?>
+				<?php get_template_part('template-parts/nav', 'menu'); ?>
 
 				<?php
 				get_template_part('template-parts/social');

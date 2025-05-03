@@ -48,7 +48,7 @@ body button.main-reviews__item-less::after {
 
 .reviews-item__text {
   overflow: hidden;
-  max-height: 200px;
+  max-height: 260px;
   margin-bottom: 10px;
 }
 
@@ -68,9 +68,23 @@ body button.main-reviews__item-less::after {
   max-height: fit-content;
 }
 
+@media (max-width:1199px) {
+  .reviews-item__text>div p {
+    font-size: 13px;
+  }
+
+  .reviews-item__text>div p:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width:991px) {
   .main-reviews__item-more, .main-reviews__item-less {
     font-size: 12px;
+  }
+
+  .reviews-item__text {
+    max-height: 212px;
   }
 }
 

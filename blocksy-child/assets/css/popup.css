@@ -26,25 +26,21 @@
     justify-content: center;
 }
 
-.popup__wrapper.city {
-    -webkit-box-align: flex-start;
-    -ms-flex-align: flex-start;
-    align-items: flex-start;
-}
-
 .popup__cont {
-    width: 600px;
-    max-height: 80vh;
-    overflow-y: auto;
-    background-color: var(--light-grey);
-    padding: 57px;
+    width: 38%;
+    height: 100%;
+    margin-left: auto;
+    background-color: var(--light_purple);
+    padding: 100px 66px;
     position: relative;
 }
 
-.popup__cont.city-cont {
-    width: 90%;
-    max-width: 1465px;
-    background-color: var(--white);
+.popup__box {
+    max-width: 320px;
+}
+
+.popup__cont * {
+    color: var(--white);
 }
 
 button.popup__del {
@@ -52,18 +48,17 @@ button.popup__del {
     border: none;
     background-color: transparent;
     margin-left: auto;
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     display: block;
     min-height: fit-content;
-    margin-bottom: 30px;
     position: absolute;
-    right: 17px;
-    top: 10px;
+    left: 66px;
+    top: 32px;
 }
 
 button.popup__del svg path {
-    fill: var(--black);
+    fill: var(--white);
     transition: fill .25s ease-in-out;
 }
 
@@ -100,9 +95,36 @@ button.popup__del:hover svg path, button.popup__del:focus svg path {
     }
 }
 
+@media (max-width:1399px) {
+    .popup__cont {
+        padding: 100px 44px;
+    }
+
+    button.popup__del {
+        left: 44px;
+    }
+}
+
+@media (max-width:1199px) {
+    .popup__cont {
+        padding: 60px 44px;
+    }
+}
+
+@media (max-width:991px) {
+    .popup__cont {
+        width: 56%;
+    }
+}
+
 @media (max-width:930px) and (max-height: 420px) {
     .popup__cont {
         padding: 50px 30px 20px;
+    }
+
+    button.popup__del {
+        left: 30px;
+        top: 15px;
     }
 }
 
@@ -111,6 +133,10 @@ button.popup__del:hover svg path, button.popup__del:focus svg path {
         width: 90%;
         max-width: 440px;
         padding: 50px 20px 30px;
+    }
+
+    button.popup__del {
+        left: 20px;
     }
 }
 

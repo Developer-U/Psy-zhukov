@@ -5,8 +5,8 @@ window.addEventListener('DOMContentLoaded', function(){
     // Функция открытия / закрытия подменю разных уровней
     // Если вложенностей в меню нет, удаляй этот код
     
-    const submenu_btn = document.querySelector('#menu-item-53 > a');
-    const first_sub_menu = document.querySelector('#menu-item-53 > ul.sub-menu');
+    const submenu_btn = document.querySelector('#menu-item-58 > a');
+    const first_sub_menu = document.querySelector('#menu-item-58 > ul.sub-menu');
 
     if( availableScreenWidth > 1200) {
         submenu_btn.addEventListener('mouseenter', function(event){
@@ -60,7 +60,7 @@ window.addEventListener('DOMContentLoaded', function(){
 
         // Скрытие меню при нажатии на один из пунктов меню первого уровня
 
-        document.querySelectorAll('#menu-item-53 >.sub-menu li').forEach(function(oneUnderItem){
+        document.querySelectorAll('#menu-item-58 >.sub-menu li').forEach(function(oneUnderItem){
             oneUnderItem.addEventListener('click', function(event){                
                 if(event.target.getAttribute('href') !== '#') {         
                     menu.classList.remove('opened');

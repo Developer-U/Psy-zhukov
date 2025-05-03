@@ -50,3 +50,8 @@ require get_stylesheet_directory() . '/includes/post-types.php';
  * Добавим фунц2ию открытия статей через /blog/
  */
 require get_stylesheet_directory() . '/includes/blog-prefix.php';
+
+/*
+ * Шорткоды
+ */
+require get_stylesheet_directory() . '/includes/shortcodes.php';
