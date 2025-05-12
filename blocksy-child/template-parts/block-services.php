@@ -24,7 +24,7 @@ $query_services = new WP_Query($arg_services);
 if ($query_services->have_posts()) {
     ?>
 
-    <section class="services pattern b-top">
+    <section class="services pattern b-top <?php if (is_page('documents')) { ?>b-bottom<?php } ?>">
         <div class="container-fluid">
             <h2 class="services-wrap__title d-xl-none">
                 <?php echo $services_title; ?>

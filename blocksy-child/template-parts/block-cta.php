@@ -12,9 +12,17 @@ $cta_big_title = get_field('cta_big_title', $page_id);
 $cta_title = get_field('cta_title', $page_id);
 ?>
 
-<section class="cta gradient-heaven">
+<section class="cta gradient-heaven <?php if (is_page('podarok')) { ?>cta-gift position-relative<?php } ?>">
+    <?php if (is_page('podarok')) { ?>
+        <div class="results__bg gift-cta-bg"></div>
+    <?php } ?>
+
     <div class="container">
-        <div class="cta__wrap cta-wrap d-flex align-items-start align-items-lg-center flex-column flex-lg-row gap-4 gap-lg-3">
+        <?php if (is_page('podarok')) {
+            echo '<p class="gift_text_under cta__under">*при возникновении неприятных, некомфортных ощущений и состояний - немедленно прекратите использование любых предлагаемых инструментов и обратиться к специалисту для прояснения ситуации и обстоятельств.</p>';
+        } ?>
+        <div
+            class="cta__wrap cta-wrap d-flex align-items-start align-items-lg-center flex-column flex-lg-row gap-4 gap-lg-3">
             <h2 class="cta-wrap__titleinner bird-title">
                 <?php
                 if ($cta_big_title) {
@@ -29,7 +37,7 @@ $cta_title = get_field('cta_title', $page_id);
                 </p>
 
                 <span class="bird bird-2"></span>
-            </h2>            
+            </h2>
 
             <button class="button slogan-cta__btn col-auto" data-popup-open="zakaz-popup">
                 записаться на консультацию

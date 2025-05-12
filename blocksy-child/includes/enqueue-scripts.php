@@ -31,6 +31,7 @@ function my_scripts_method()
 	wp_enqueue_style('accord-css', get_stylesheet_directory_uri() . '/assets/css/accord.css', array(), null, 'all');
 	wp_enqueue_style('breadcrumbs', get_stylesheet_directory_uri() . '/assets/css/breadcrumbs.css', array(), null, 'all');
 	wp_enqueue_style('tabs_css', get_stylesheet_directory_uri() . '/assets/css/tabs.css', array(), null, 'all');
+	wp_enqueue_style('map_css', get_stylesheet_directory_uri() . '/assets/css/map.css', array(), null, 'all');
 
 
 	wp_register_script('bootstrap_js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js', null, null, true);

@@ -397,6 +397,10 @@ footer .menu li a:hover, footer .menu li a:focus {
     footer .menu li a {
         font-size: 16px;
     }
+
+    #primary-menu li:hover a, #primary-menu li:focus a, #primary-menu li.active a {
+        color: var(--purple);
+    }
 }
 
 @media (max-width:991px) {

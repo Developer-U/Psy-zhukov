@@ -26,7 +26,7 @@ $gift_button = get_field('gift_button', 'options');
                         <?php echo $gift_title; ?>
 
                         <span class="bird bird-1"></span>
-                    </h2>                    
+                    </h2>
                 </div>
 
                 <div class="gift__box">

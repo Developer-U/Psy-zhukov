@@ -27,6 +27,36 @@ if (function_exists('acf_add_options_page')) {
 }
 
 /*
+ * Sticky sidebar
+ */
+
+add_action('wp_enqueue_scripts', 'add_my_scripts');
+function add_my_scripts()
+{
+	wp_register_script(
+		'resizesensor_js',
+		get_stylesheet_directory_uri() . '/assets/js/ResizeSensor.js',
+		array('jquery'),
+		wp_get_theme()->get('Version'),
+		true
+	);
+	wp_register_script(
+		'theia_sticky_sidebar_js',
+		get_stylesheet_directory_uri() . '/assets/js/theia-sticky-sidebar.js',
+		array('jquery'),
+		wp_get_theme()->get('Version'),
+		true
+	);
+	wp_register_script(
+		'sticky_sidebar_init_js',
+		get_stylesheet_directory_uri() . '/assets/js/sticky-sidebar-init.js',
+		array('theia_sticky_sidebar_js'),
+		wp_get_theme()->get('Version'),
+		true
+	);
+}
+
+/*
  * Скрипты и стили
  */
 require get_stylesheet_directory() . '/includes/enqueue-scripts.php';

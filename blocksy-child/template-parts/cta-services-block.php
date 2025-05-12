@@ -9,6 +9,9 @@
  * @license      GPL-2.0+
  **/
 $page_id = get_the_ID();
+if (is_single()) {
+    echo '<section class="cta-box blue-cta">';
+}
 ?>
 
 <article id="cta_<?php echo $page_id; ?>" class="cta-wrapper gutenberg d-grid" data-aos="fade-up" data-aos-offset="50"
@@ -25,3 +28,9 @@ $page_id = get_the_ID();
         <?php echo do_shortcode('[contact-form-7 id="1636f85" title="Заказать услугу"]'); ?>
     </div>
 </article>
+
+<?php
+if (is_single()) {
+    echo '</section>';
+}
+?>

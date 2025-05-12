@@ -4,6 +4,7 @@ body .accordionjs .acc_section {
     border-radius: 30px;
     margin-bottom: 18px;
     z-index: 2;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.25);
 }
 
 body .accordionjs .acc_section:last-of-type {
@@ -65,7 +66,7 @@ body .accordionjs .acc_section.acc_active>.acc_head {
 
 @media (max-width:1399px) {
     body .accordionjs .acc_section .acc_head {
-        font-size: 21px;
+        font-size: 18px;
     }
 }
 
@@ -76,11 +77,11 @@ body .accordionjs .acc_section.acc_active>.acc_head {
     }
 
     body .accordionjs .acc_section {
-        margin-bottom: 20px;
+        margin-bottom: 14px;
     }
 
     body .accordionjs .acc_section .acc_head {
-        font-size: 19px;
+        font-size: 15px;
     }
 }
 
@@ -106,6 +107,9 @@ body .accordionjs .acc_section.acc_active>.acc_head {
         width: 24px;
         height: 24px;
     }
+    body .accordionjs .acc_section .acc_head {
+        font-size: 14px;        
+    }
 }
 
 @media (max-width:767px) {
@@ -119,14 +123,19 @@ body .accordionjs .acc_section.acc_active>.acc_head {
         width: 24px;
         height: 24px;
     }
+    body .accordionjs .acc_section .acc_head {
+        font-size: 14px;        
+    }
+    body .accordionjs .acc_section .acc_content {
+        padding: 0 16px 18px 20px;
+    }
+    body .accordionjs .acc_section .acc_head {
+        padding: 12px 43px 15px 20px;
+    }
 }
 
-@media (max-width:439px) {
+@media (max-width:439px) { 
     body .accordionjs .acc_section .acc_head {
-        font-size: 16px;
-    }
-
-    body .accordionjs .acc_section .acc_head {
-        font-size: 15px;
+        font-size: 13px;
     }
 }

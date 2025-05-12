@@ -33,13 +33,9 @@ window.addEventListener('DOMContentLoaded', function(){
     /*Open burger menu*/
     var menu = document.querySelector('#navbar')
     ,burger_open = document.querySelector('.burger')  
-    ,burger_close = document.querySelector('.burger-close'); 
+    ,burger_close = document.querySelector('.burger-close');    
 
-   
-
-    burger_open.addEventListener('click', function(){ 
-        console.log(burger_open);        
-        console.log(menu); 
+    burger_open.addEventListener('click', function(){     
         if( menu.classList.contains('opened') === false ) {
             menu.classList.add('opened');
             document.querySelector('body').classList.add('closed');

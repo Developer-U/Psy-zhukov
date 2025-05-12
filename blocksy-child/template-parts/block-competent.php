@@ -7,57 +7,26 @@
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
-$competent_first_title = get_field('competent_first_title', 'options');
-$competent_second_title = get_field('competent_second_title', 'options');
+$results_image = get_field('results_image', 'options');
 ?>
 
-<section class="competent tree gradient position-relative b-top b-bottom">
-    <div class="container-fluid">
+<section
+    class="competent position-relative b-top b-bottom <?php if (is_page('about')) { ?>gradient-heaven heaven2 gradient-dark<?php } else { ?> tree gradient<?php } ?>">
+    <?php if (is_page('about')) { ?>
+        <div class="results__bg"
+            style="background-image: url(<?php echo $results_image['url']; ?>); background-repeat: no-repeat; background-size: auto 100%; background-position: bottom right">
+        </div>
+    <?php } ?>
+    <div class="container-fluid position-relative">
         <div class="competent__wrap competent-wrap d-grid grid-two">
-            <?php if ($competent_first_title) { ?>
-                <article class="competent-wrap__item competent-box first">
-                    <h2 class="competent-box__title">
-                        <?php echo $competent_first_title; ?>
-                    </h2>
+            <?php
+            get_template_part('template-parts/my', 'competent');
 
-                    <ul class="competent-box__list competent-list d-flex flex-wrap">
-                        <?php if (have_rows('new_competent_first', 'options')) { ?>
-                            <?php while (have_rows('new_competent_first', 'options')) {
-                                the_row();
-                                $competent_first_title = get_sub_field('competent_first_title', 'options');
-                                ?>
-
-                                <li class="plashka-item competent-list__item col-auto">
-                                    <?php echo $competent_first_title; ?>
-                                </li>
-
-                            <?php }
-                        } ?>
-                    </ul>
-                </article>
-            <?php }
-            if ($competent_second_title) { ?>
-                <article class="competent-wrap__item competent-box second">
-                    <h2 class="competent-box__title">
-                        <?php echo $competent_second_title; ?>
-                    </h2>
-
-                    <ul class="competent-box__list competent-list d-flex flex-wrap">
-                        <?php if (have_rows('new_competent_second', 'options')) { ?>
-                            <?php while (have_rows('new_competent_second', 'options')) {
-                                the_row();
-                                $competent_second_title = get_sub_field('competent_second_title', 'options');
-                                ?>
-
-                                <li class="plashka-item competent-list__item dark col-auto">
-                                    <?php echo $competent_second_title; ?>
-                                </li>
-
-                            <?php }
-                        } ?>
-                    </ul>
-                </article>
-            <?php }
+            if (is_page('about')) {
+                get_template_part('template-parts/my', 'qualification');
+            } else {
+                get_template_part('template-parts/my', 'instruments');
+            }
             ?>
         </div>
     </div>

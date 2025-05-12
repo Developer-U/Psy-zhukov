@@ -48,11 +48,11 @@
     transition: all .25s ease-in-out;
 }
 
-header .social__link.whatsapp, .hero .social__link.whatsapp {
+header .social__link.whatsapp, .hero .social__link.whatsapp, .contacts__item.whatsapp::before {
     background-image: url('../img/whatsapp.svg');
 }
 
-header .social__link.telegram, .hero .social__link.telegram {
+header .social__link.telegram, .hero .social__link.telegram, .contacts__item.telegram::before {
     background-image: url('../img/Telegram.svg');
 }
 
@@ -75,14 +75,16 @@ header .social__link.rutube, .hero .social__link.rutube {
     transition: all .25s ease-in-out;
 }
 
-.social__link.telegram:hover, .social__link.telegram:focus, .social__link.telegram:active {
+.social__link.telegram:hover, .social__link.telegram:focus, .social__link.telegram:active,
+.contacts__item.telegram:hover::before {
     background-image: url('../img/Telegram-hover.svg');
     -webkit-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
 }
 
-.social__link.whatsapp:hover, .social__link.whatsapp:focus, .social__link.whatsapp:active {
+.social__link.whatsapp:hover, .social__link.whatsapp:focus, .social__link.whatsapp:active,
+.contacts__item.whatsapp:hover::before {
     background-image: url('../img/whatsapp-hover.svg');
     -webkit-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
