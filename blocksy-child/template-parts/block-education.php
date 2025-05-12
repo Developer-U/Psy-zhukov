@@ -34,9 +34,9 @@ if (have_rows('new_education', 'options')) {
                         $index = $i++;
                         ?>
 
-                        <li data-aos="fade-right" data-aos-offset="200" data-aos-delay="<?php echo 100 * ($index * 2.5); ?>"
-                            data-aos-duration="900" data-aos-easing="ease-in-out" data-aos-once="true"
-                            data-aos-anchor-placement="top-right" class="education__item education-item position-relative   
+                        <li data-aos="<?php if ($index == 0 || ($index % 2) == 0) { ?>fade-left<?php } else { ?>fade-right<?php } ?>"
+                            data-aos-offset="50" data-aos-delay="<?php echo 100 * ($index * 0.5); ?>" data-aos-duration="800"
+                            data-aos-easing="ease-in-out" data-aos-once="true" data-aos-anchor-placement="top-right" class="education__item education-item position-relative   
                             <?php if ($index == 0 || ($index % 2) == 0) { ?>offset<?php } ?>                      
                         ">
 

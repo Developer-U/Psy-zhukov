@@ -7,7 +7,10 @@
 $competent_second_title = get_field('competent_second_title', 'options');
 
 if ($competent_second_title) { ?>
-    <article class="competent-wrap__item competent-box second">
+    <article class="competent-wrap__item competent-box second"
+    data-aos="fade-left" data-aos-offset="50"
+        data-aos-delay="150" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-once="true"
+        data-aos-anchor-placement="top-left">
         <h2 class="competent-box__title">
             <?php echo $competent_second_title; ?>
         </h2>

@@ -22,7 +22,9 @@ $gift_button = get_field('gift_button', 'options');
 
             <div class="gift__right col d-flex flex-column flex-lg-row">
                 <div class="gift-wrap__title">
-                    <h2 class="gift__title bird-title">
+                    <h2 class="gift__title bird-title" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100"
+                        data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true"
+                        data-aos-anchor-placement="left-top">
                         <?php echo $gift_title; ?>
 
                         <span class="bird bird-1"></span>
@@ -35,7 +37,7 @@ $gift_button = get_field('gift_button', 'options');
                     </div>
 
                     <a href="<?php echo $gift_button['link']; ?>"
-                        class="button gift__btn"><?php echo $gift_button['text']; ?></a>
+                        class="button gift__btn bounce"><?php echo $gift_button['text']; ?></a>
                 </div>
             </div>
         </div>

@@ -34,7 +34,9 @@ get_template_part('template-parts/hero', 'pages');
                 <?php
                 if ($socials['whatsapp']) { ?>
                     <li>
-                        <a class="contacts__item whatsapp"
+                        <a class="contacts__item whatsapp" data-aos="fade-right" data-aos-offset="100" data-aos-delay="200"
+                            data-aos-duration="1000" data-aos-easing="ease-in" data-aos-once="true"
+                            data-aos-anchor-placement="left-top"
                             href="https://api.whatsapp.com/send?phone=<?php echo str_replace([' ', '(', ')', '-', '+'], '', $socials['whatsapp']); ?>"
                             target="_blank">
                             <?php echo $socials['whatsapp']; ?>
@@ -44,7 +46,9 @@ get_template_part('template-parts/hero', 'pages');
 
                 if ($socials['telegram']) { ?>
                     <li>
-                        <a class="contacts__item telegram"
+                        <a class="contacts__item telegram" data-aos="fade-right" data-aos-offset="200" data-aos-delay="300"
+                            data-aos-duration="1000" data-aos-easing="ease-in" data-aos-once="true"
+                            data-aos-anchor-placement="left-top"
                             href="https://t.me/+<?php echo str_replace([' ', '(', ')', '-', '+'], '', $socials['telegram']); ?>"
                             target="_blank">
                             <?php echo $socials['telegram']; ?>
@@ -54,7 +58,9 @@ get_template_part('template-parts/hero', 'pages');
 
                 if ($address) { ?>
                     <li>
-                        <p class="contacts__item address">
+                        <p class="contacts__item address" data-aos="fade-right" data-aos-offset="300" data-aos-delay="300"
+                            data-aos-duration="1000" data-aos-easing="ease-in" data-aos-once="true"
+                            data-aos-anchor-placement="left-top">
                             <?php echo $address; ?>
                         </p>
                     </li>

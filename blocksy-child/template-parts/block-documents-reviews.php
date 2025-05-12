@@ -33,7 +33,9 @@ if ($query_reviews->have_posts()) {
 
         <div class="container-fluid position-relative">
             <div class="reviews__wrap reviews-wrap d-grid">
-                <div class="reviews-wrap__documents block-documents">
+                <div class="reviews-wrap__documents block-documents" data-aos="fade-right" data-aos-offset="100"
+                    data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in" data-aos-once="false"
+                    data-aos-anchor-placement="left-top">
                     <?php if ($documents_title) { ?>
                         <h2 class="service-item__title">
                             <?php echo $documents_title; ?>
@@ -51,7 +53,8 @@ if ($query_reviews->have_posts()) {
                                     $document_diploma = get_sub_field('document_diploma', 'options');
                                     ?>
 
-                                    <a href="<?php echo $document_diploma['url']; ?>" class="swiper-slide documents-slider__slide document position-relative"
+                                    <a href="<?php echo $document_diploma['url']; ?>"
+                                        class="swiper-slide documents-slider__slide document position-relative"
                                         data-fancybox="document_gallery">
                                         <span class="gallery-zoom position-absolute"></span>
                                         <img src="<?php echo $document_diploma_preview['url']; ?>"
@@ -75,7 +78,9 @@ if ($query_reviews->have_posts()) {
                     </a>
                 </div>
 
-                <div class="reviews-wrap__reviews block-reviews">
+                <div class="reviews-wrap__reviews block-reviews" data-aos="fade-left" data-aos-offset="100"
+                    data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-in" data-aos-once="false"
+                    data-aos-anchor-placement="right-top">
                     <?php if ($reviews_title) { ?>
                         <div class="block-reviews__titles title-box d-grid align-items-center">
                             <h2 class="block-reviews__title title-box__title">

@@ -26,6 +26,7 @@
     align-items: center;
     justify-content: center;
     transition: all .3s ease-in-out;
+    cursor: pointer;
 }
 
 .gallery-tab-btns__button.gallery-page {

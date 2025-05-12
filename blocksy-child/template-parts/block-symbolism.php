@@ -17,42 +17,54 @@ $symbol_item_5 = get_field('symbol_item_5');
 
 <section class="symbolism gradient position-relative">
     <div class="container">
-        <h2 class="symbolism__title">
+        <h2 class="symbolism__title" data-aos="fade-right" data-aos-offset="100" data-aos-delay="100"
+            data-aos-duration="1000" data-aos-easing="ease-in" data-aos-once="true"
+            data-aos-anchor-placement="left-top">
             <?php echo $symbolism_title; ?>
         </h2>
 
         <div class="symbolism__tree symbol-tree d-grid">
             <div class="symbol-tree__pictures">
                 <!-- Item1 -->
-                <div class="symbol-tree__left item-1 position-relative">
+                <div class="symbol-tree__left item-1 position-relative" data-aos="fade-up" data-aos-offset="100"
+                    data-aos-delay="100" data-aos-duration="900" data-aos-easing="ease-in" data-aos-once="false"
+                    data-aos-anchor-placement="left-top">
                     <?php if ($symbol_item_1['image']) { ?>
                         <?php echo '<img src="' . $symbol_item_1['image']['url'] . '" alt="' . $symbol_item_1['image']['alt'] . '" class="position-relative">'; ?>
                     <?php } ?>
                 </div>
 
                 <!-- Item2 -->
-                <div class="symbol-tree__left item-2">
+                <div class="symbol-tree__left item-2" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100"
+                    data-aos-duration="900" data-aos-easing="ease-in" data-aos-once="false"
+                    data-aos-anchor-placement="left-top">
                     <?php if ($symbol_item_2['image']) { ?>
                         <?php echo '<img src="' . $symbol_item_2['image']['url'] . '" alt="' . $symbol_item_2['image']['alt'] . '" class="position-relative">'; ?>
                     <?php } ?>
                 </div>
 
                 <!-- Item3 -->
-                <div class="symbol-tree__left item-3">
+                <div class="symbol-tree__left item-3" data-aos="fade-up" data-aos-offset="300" data-aos-delay="100"
+                    data-aos-duration="900" data-aos-easing="ease-in" data-aos-once="false"
+                    data-aos-anchor-placement="left-top">
                     <?php if ($symbol_item_3['image']) { ?>
                         <?php echo '<img src="' . $symbol_item_3['image']['url'] . '" alt="' . $symbol_item_3['image']['alt'] . '" class="position-relative">'; ?>
                     <?php } ?>
                 </div>
 
                 <!-- Item4 -->
-                <div class="symbol-tree__left item-4">
+                <div class="symbol-tree__left item-4" data-aos="fade-up" data-aos-offset="400" data-aos-delay="100"
+                    data-aos-duration="900" data-aos-easing="ease-in" data-aos-once="false"
+                    data-aos-anchor-placement="left-top">
                     <?php if ($symbol_item_4['image']) { ?>
                         <?php echo '<img src="' . $symbol_item_4['image']['url'] . '" alt="' . $symbol_item_4['image']['alt'] . '" class="position-relative">'; ?>
                     <?php } ?>
                 </div>
 
                 <!-- Item5 -->
-                <div class="symbol-tree__left item-5">
+                <div class="symbol-tree__left item-5" data-aos="fade-up" data-aos-offset="500" data-aos-delay="100"
+                    data-aos-duration="900" data-aos-easing="ease-in" data-aos-once="false"
+                    data-aos-anchor-placement="left-top">
                     <?php if ($symbol_item_5['image']) { ?>
                         <?php echo '<img src="' . $symbol_item_5['image']['url'] . '" alt="' . $symbol_item_5['image']['alt'] . '" class="position-relative">'; ?>
                     <?php } ?>
@@ -60,7 +72,9 @@ $symbol_item_5 = get_field('symbol_item_5');
             </div>
 
             <div class="symbol-tree__texts position-relative">
-                <div class="symbol-tree__right item-1">
+                <div class="symbol-tree__right item-1" data-aos="fade-left" data-aos-offset="100" data-aos-delay="100"
+                    data-aos-duration="900" data-aos-easing="ease-in" data-aos-once="false"
+                    data-aos-anchor-placement="left-top">
                     <h3 class="symbol-tree__title">
                         <?php echo $symbol_item_1['title']; ?>
                     </h3>
@@ -70,7 +84,9 @@ $symbol_item_5 = get_field('symbol_item_5');
                     </div>
                 </div>
 
-                <div class="symbol-tree__right item-2">
+                <div class="symbol-tree__right item-2" data-aos="fade-left" data-aos-offset="200" data-aos-delay="100"
+                    data-aos-duration="1000" data-aos-easing="ease-in" data-aos-once="false"
+                    data-aos-anchor-placement="left-top">
                     <h3 class="symbol-tree__title">
                         <?php echo $symbol_item_2['title']; ?>
                     </h3>
@@ -80,7 +96,9 @@ $symbol_item_5 = get_field('symbol_item_5');
                     </div>
                 </div>
 
-                <div class="symbol-tree__right item-3">
+                <div class="symbol-tree__right item-3" data-aos="fade-left" data-aos-offset="300" data-aos-delay="100"
+                    data-aos-duration="1000" data-aos-easing="ease-in" data-aos-once="false"
+                    data-aos-anchor-placement="left-top">
                     <h3 class="symbol-tree__title">
                         <?php echo $symbol_item_3['title']; ?>
                     </h3>
@@ -90,7 +108,9 @@ $symbol_item_5 = get_field('symbol_item_5');
                     </div>
                 </div>
 
-                <div class="symbol-tree__right item-4">
+                <div class="symbol-tree__right item-4" data-aos="fade-left" data-aos-offset="400" data-aos-delay="100"
+                    data-aos-duration="1000" data-aos-easing="ease-in" data-aos-once="false"
+                    data-aos-anchor-placement="left-top">
                     <h3 class="symbol-tree__title">
                         <?php echo $symbol_item_4['title']; ?>
                     </h3>
@@ -100,7 +120,9 @@ $symbol_item_5 = get_field('symbol_item_5');
                     </div>
                 </div>
 
-                <div class="symbol-tree__right item-5">
+                <div class="symbol-tree__right item-5" data-aos="fade-left" data-aos-offset="500" data-aos-delay="100"
+                    data-aos-duration="1000" data-aos-easing="ease-in" data-aos-once="false"
+                    data-aos-anchor-placement="left-top">
                     <h3 class="symbol-tree__title">
                         <?php echo $symbol_item_5['title']; ?>
                     </h3>

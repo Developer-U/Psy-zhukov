@@ -21,7 +21,9 @@ $result_items = get_field('result_items', 'options');
 
     <div class="container">
         <div class="levels__wrap results__wrap d-grid align-items-start">
-            <h2 class="levels__title results__title">
+            <h2 class="levels__title results__title" data-aos="zoom-in-up" data-aos-offset="100"
+                data-aos-delay="100" data-aos-duration="900" data-aos-easing="ease-in-out" data-aos-once="true"
+                data-aos-anchor-placement="left-top">
                 <?php if ($results_title) {
                     echo $results_title;
                 } else {

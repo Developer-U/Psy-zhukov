@@ -7,7 +7,9 @@
 $competent_qualification_title = get_field('competent_qualification_title', 'options');
 
 if ($competent_qualification_title) { ?>
-    <article class="competent-wrap__item competent-box qualification">
+    <article class="competent-wrap__item competent-box qualification" data-aos="fade-left" data-aos-offset="50"
+        data-aos-delay="150" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-once="true"
+        data-aos-anchor-placement="top-left">
         <h2 class="competent-box__title">
             <?php echo $competent_qualification_title; ?>
         </h2>

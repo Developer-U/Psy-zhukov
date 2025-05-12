@@ -31,11 +31,9 @@ $slogan_cta_text = get_field('solve_slogan_cta_text', 'options');
                     $index = $i++;
                     ?>
 
-                    <li data-aos="fade-right" data-aos-offset="200" data-aos-delay="<?php echo 100 * ($index * 2.5); ?>"
+                    <li data-aos="fade-left" data-aos-offset="200" data-aos-delay="<?php echo 100 * ($index * 3.5); ?>"
                         data-aos-duration="900" data-aos-easing="ease-in-out" data-aos-once="true"
-                        data-aos-anchor-placement="top-right" class="solves-list__item solve-item position-relative
-                        
-                        ">
+                        data-aos-anchor-placement="top-left" class="solves-list__item solve-item position-relative">
 
                         <div class="solves-item__wrap position-relative overlay"
                             style="background-image: url(<?php echo $solve_image['url']; ?>); background-repeat: no-repeat; background-size: auto calc(100% - 2px); background-position: center right -60px">

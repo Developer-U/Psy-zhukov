@@ -82,8 +82,7 @@ do_action('blocksy:footer:before');
                 <?php } ?>
             </div>
 
-            <article class="cta-wrapper" data-aos="fade-up" data-aos-offset="50" data-aos-delay="0"
-                data-aos-duration="1000" data-aos-easing="ease-in" data-aos-once="false">
+            <article class="cta-wrapper">
                 <h3 class="cta-wrapper__title">
                     <?php if ($footer_form['title']) {
                         echo $footer_form['title'];

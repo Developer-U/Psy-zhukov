@@ -48,23 +48,23 @@
     transition: all .25s ease-in-out;
 }
 
-header .social__link.whatsapp, .hero .social__link.whatsapp, .contacts__item.whatsapp::before {
+header .social__link.whatsapp, .hero .social__link.whatsapp, .simple-page__top .social__link.whatsapp, .contacts__item.whatsapp::before {
     background-image: url('../img/whatsapp.svg');
 }
 
-header .social__link.telegram, .hero .social__link.telegram, .contacts__item.telegram::before {
+header .social__link.telegram, .hero .social__link.telegram, .simple-page__top .social__link.telegram, .contacts__item.telegram::before {
     background-image: url('../img/Telegram.svg');
 }
 
-header .social__link.vk, .hero .social__link.vk {
+header .social__link.vk, .hero .social__link.vk, .simple-page__top .social__link.vk {
     background-image: url('../img/vk.svg');
 }
 
-header .social__link.youtube, .hero .social__link.youtube {
+header .social__link.youtube, .hero .social__link.youtube, .simple-page__top .social__link.youtube {
     background-image: url('../img/youtube.svg');
 }
 
-header .social__link.rutube, .hero .social__link.rutube {
+header .social__link.rutube, .hero .social__link.rutube, .simple-page__top .social__link.rutube {
     background-image: url('../img/rutube.svg');
 }
 

@@ -33,7 +33,10 @@ if (have_rows('new_work_level', 'options')) {
                             $index = $i++;
                             ?>
 
-                            <li class="levels-list__item level-item item-<?php echo $index; ?> position-relative">
+                            <li class="levels-list__item level-item item-<?php echo $index; ?> position-relative"
+                                data-aos="fade-up" data-aos-offset="200" data-aos-delay="<?php echo 100 * ($index * 5); ?>"
+                                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true"
+                                data-aos-anchor-placement="top-left">
                                 <span class="level-item__num position-absolute"><?php echo $index; ?></span>
 
                                 <p class="level-item__text">

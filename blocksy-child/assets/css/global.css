@@ -666,9 +666,27 @@ body h1.hero-single__title {
     margin-bottom: 31px;
 }
 
+body h1.simple-page__title {
+    color: var(--black);
+}
+
 body h1.error-404__title {
     font-size: 110px;
     margin-bottom: 3rem;
+}
+
+body h1.error-404__title {
+    font-size: 110px;
+    margin-bottom: 3rem;
+}
+
+.simple-page__top {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--dark_blue);
+}
+
+.simple-page__top *, .simple-page__top .breadcrumbs__list span a {
+    color: var(--black);
 }
 
 body h2 {
@@ -768,7 +786,7 @@ body h2.bird-title>span.bird.bird-2 {
     top: 21%;
 }
 
-body h2.digits-item__digit, body h2.digits-item__digit span {
+body h2.digits-item__digit, body h2.digits-item__digit::after {
     font-size: 80px;
 }
 
@@ -776,12 +794,18 @@ body h2.digits-item__digit {
     color: var(--white);
     margin-bottom: -12px;
     filter: drop-shadow(6px 5px 0px #2B3246);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-body h2.digits-item__digit span {
+body h2.digits-item__digit::after {
+    content: "+";
+    top: 1%;
     color: var(--blue);
-    position: relative;
-    left: -15px;
+    position: absolute;
+    right: -54px;
+    filter: drop-shadow(6px 5px 0px #2B3246);
 }
 
 body .post h3 {
@@ -1027,6 +1051,37 @@ body footer .cta-wrapper .button {
     }
 }
 
+@keyframes bounce {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes go-to-right {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(102vw);
+    }
+}
+
+@keyframes go-from-left {
+    0% {
+        transform: translateX(-102vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
 .hero-wrapper__link {
     position: absolute;
     left: 50%;
@@ -1039,6 +1094,14 @@ body footer .cta-wrapper .button {
     width: 28px;
     height: 62px;
     background: url('../img/to-down.svg') no-repeat center/contain;
+}
+
+.bounce {
+    animation: 1s ease-in 1s infinite alternate bounce;
+}
+
+.go-to-right-and-from-left {
+    animation: 2s ease-in 1s go-to-right, 1s ease-in 3s go-from-left;
 }
 
 .b-top {
@@ -1137,6 +1200,15 @@ body footer .cta-wrapper .button {
         margin-bottom: 1rem;
     }
 
+    body h1.simple-page__title {
+        font-size: 50px;
+    }
+
+    body h1.error-404__title {
+        font-size: 90px;
+        margin-bottom: 2rem;
+    }
+
     body h2.hero__subtitle {
         font-size: 42px;
     }
@@ -1186,8 +1258,12 @@ body footer .cta-wrapper .button {
         margin-bottom: -5px;
     }
 
-    body h2.digits-item__digit, body h2.digits-item__digit span {
+    body h2.digits-item__digit, body h2.digits-item__digit::after {
         font-size: 64px;
+    }
+
+    body h2.digits-item__digit::after {
+        right: -44px;
     }
 
     section.digits {
@@ -1417,6 +1493,15 @@ body footer .cta-wrapper .button {
         font-size: 24px;
     }
 
+    body h1.simple-page__title {
+        font-size: 42px;
+    }
+
+    body h1.error-404__title {
+        font-size: 82px;
+        margin-bottom: 1.3rem;
+    }
+
     body h2 {
         margin-bottom: 30px;
         font-size: 36px;
@@ -1642,6 +1727,10 @@ body footer .cta-wrapper .button {
         margin-bottom: 5rem;
     }
 
+    body h1.simple-page__title {
+        font-size: 36px;
+    }
+
     body h2.hero__subtitle {
         margin-bottom: 3rem;
     }
@@ -1856,6 +1945,15 @@ body footer .cta-wrapper .button {
         margin-bottom: 1rem;
     }
 
+    body h1.simple-page__title {
+        font-size: 28px;
+    }
+
+    body h1.error-404__title {
+        font-size: 72px;
+        margin-bottom: 0.8rem;
+    }
+
     body h2.hero__subtitle {
         font-size: 22px;
         margin-bottom: 0;
@@ -1883,12 +1981,13 @@ body footer .cta-wrapper .button {
         font-size: 26px;
     }
 
-    body h2.digits-item__digit, body h2.digits-item__digit span {
+    body h2.digits-item__digit, body h2.digits-item__digit::after {
         font-size: 50px;
     }
 
-    body h2.digits-item__digit span {
-        left: -7px;
+    body h2.digits-item__digit::after {
+        right: -34px;
+        top: -3%;
     }
 
     body h2.gift__title.gift-page {
@@ -2123,6 +2222,15 @@ body footer .cta-wrapper .button {
         margin-bottom: 2rem;
     }
 
+    body h1.simple-page__title {
+        font-size: 28px;
+    }
+
+    body h1.error-404__title {
+        font-size: 72px;
+        margin-bottom: 0.8rem;
+    }
+
     body h2 {
         margin-bottom: 22px;
         font-size: 26px;
@@ -2162,12 +2270,13 @@ body footer .cta-wrapper .button {
         font-size: 16px;
     }
 
-    body h2.digits-item__digit, body h2.digits-item__digit span {
+    body h2.digits-item__digit, body h2.digits-item__digit::after {
         font-size: 50px;
     }
 
-    body h2.digits-item__digit span {
-        left: -7px;
+    body h2.digits-item__digit::after {
+        right: -34px;
+        top: -3%;
     }
 
     section.tree::after {
@@ -2438,8 +2547,17 @@ body footer .cta-wrapper .button {
         font-size: 26px;
     }
 
-    body h2.digits-item__digit, body h2.digits-item__digit span {
+    body h1.error-404__title {
+        font-size: 66px;
+        margin-bottom: 1rem;
+    }
+
+    body h2.digits-item__digit, body h2.digits-item__digit::after {
         font-size: 40px;
+    }
+
+    body h2.digits-item__digit::after {
+        right: -30px;
     }
 
     body h2.bird-title>span.bird {
@@ -2580,8 +2698,12 @@ body footer .cta-wrapper .button {
         margin-bottom: 1rem;
     }
 
-    body h2.digits-item__digit, body h2.digits-item__digit span {
+    body h2.digits-item__digit, body h2.digits-item__digit::after {
         font-size: 37px;
+    }
+
+    body h2.digits-item__digit::after {
+        right: -27px;
     }
 
     body h2.cta-wrap__titleinner {

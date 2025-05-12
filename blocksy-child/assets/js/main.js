@@ -13,14 +13,10 @@ window.addEventListener('DOMContentLoaded', function(){
     selectors.forEach(function(selector){
     var im = new Inputmask("+7(999)-999-9999");
     im.mask(selector);
-    });
-
-    
+    });   
     
     /* Init AOS Animation */
-    AOS.init();
-
-    
+    AOS.init();  
 
     
     /* Get Digit Count */

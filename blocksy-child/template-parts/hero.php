@@ -28,18 +28,23 @@ $slogan_cta_text = get_field('slogan_cta_text', 'options');
     <div
         class="container-fluid hero__wrapper position-relative position-relative d-flex flex-column-reverse flex-lg-row justify-content-between">
         <div class="hero__left col">
-            <h1 class="hero__title">
+            <h1 class="hero__title" data-aos="fade-right" data-aos-offset="50" data-aos-delay="50"
+                data-aos-duration="1000">
                 <?php echo $hero_title ? $hero_title : 'Ваш персональный<br>психолог-психотерапевт'; ?>
             </h1>
 
-            <h2 class="hero__subtitle">
+            <h2 class="hero__subtitle" data-aos="fade-right" data-aos-offset="100" data-aos-delay="200"
+                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true"
+                data-aos-anchor-placement="top-left">
                 <?php echo $author_name ? $author_name : 'Геннадий Вадимович'; ?>
                 <span>
                     <?php echo $author_second_name ? $author_second_name : 'ЖУКОВ'; ?>
                 </span>
             </h2>
 
-            <div class="hero__text">
+            <div class="hero__text" data-aos="fade-up" data-aos-offset="100" data-aos-delay="300"
+                data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-once="true"
+                data-aos-anchor-placement="left-bottom">
                 <?php
                 if ($hero_text) {
                     echo $hero_text;

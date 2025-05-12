@@ -27,7 +27,7 @@ get_header();
                     <h2 class="gift__title gift-page bird-title">
                         <?php echo $gift_title; ?>
 
-                        <span class="bird bird-1"></span>
+                        <span class="bird bird-1 go-to-right-and-from-left"></span>
                     </h2>
                 </div>
 
@@ -60,7 +60,10 @@ if (have_rows('new_instrument', $page_id)) {
         ?>
 
         <section class="instrument b-bottom"
-            style="background-image: url(<?php echo $instrument_image['url']; ?>); background-repeat: no-repeat; background-size: cover; background-position: center">
+            style="background-image: url(<?php echo $instrument_image['url']; ?>); background-repeat: no-repeat; background-size: cover; background-position: center"
+            data-aos="<?php if ($index == 0 || ($index % 2) == 0) { ?>fade-left<?php } else { ?>fade-right<?php } ?>"
+            data-aos-offset="50" data-aos-delay="<?php echo 100 * ($index * 0.5); ?>" data-aos-duration="800"
+            data-aos-easing="ease-in-out" data-aos-once="true" data-aos-anchor-placement="top-right">
             <div class="container">
                 <div class="instrument__wrap instrument-wrap d-flex gap-2 gap-lg-3 align-items-start">
                     <div class="instrument-wrap__item level-item item-<?php echo $index; ?> position-relative">

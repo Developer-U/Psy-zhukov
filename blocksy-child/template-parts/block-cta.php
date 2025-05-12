@@ -23,7 +23,9 @@ $cta_title = get_field('cta_title', $page_id);
         } ?>
         <div
             class="cta__wrap cta-wrap d-flex align-items-start align-items-lg-center flex-column flex-lg-row gap-4 gap-lg-3">
-            <h2 class="cta-wrap__titleinner bird-title">
+            <h2 class="cta-wrap__titleinner bird-title" data-aos="fade-right" data-aos-offset="0" data-aos-delay="50"
+                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false"
+                data-aos-anchor-placement="top-left">
                 <?php
                 if ($cta_big_title) {
                     echo $cta_big_title;
@@ -32,14 +34,16 @@ $cta_title = get_field('cta_title', $page_id);
                 }
                 ?>
 
-                <p class="cta-wrap__title position-absolute">
+                <p class="cta-wrap__title position-absolute" data-aos="fade-right" data-aos-offset="0"
+                    data-aos-delay="200" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-once="false"
+                    data-aos-anchor-placement="top-left">
                     <?php echo $cta_title; ?>
                 </p>
 
                 <span class="bird bird-2"></span>
             </h2>
 
-            <button class="button slogan-cta__btn col-auto" data-popup-open="zakaz-popup">
+            <button class="button slogan-cta__btn col-auto bounce" data-popup-open="zakaz-popup">
                 записаться на консультацию
             </button>
         </div>
