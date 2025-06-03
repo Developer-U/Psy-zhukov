@@ -74,12 +74,13 @@ do_action('blocksy:footer:before');
                         } ?>
                     </ul>
                 <?php }
+                ?>
 
-                if ($copyright) { ?>
-                    <div class="footer__down footer-down d-none d-lg-block">
-                        ©&nbsp;<?php echo date("Y"); ?>&nbsp; <?php echo $copyright; ?>
-                    </div>
-                <?php } ?>
+                <div class="footer__down footer-down d-none d-lg-block">
+                    ©&nbsp;<?php echo date("Y"); ?>&nbsp; <?php echo $copyright; ?>
+
+                    <a class="mt-4" href="/privacy-policy/">Политика конфиденциальности</a>
+                </div>
             </div>
 
             <article class="cta-wrapper">
@@ -125,13 +126,13 @@ do_action('blocksy:footer:before');
                             ;
                         } ?>
                     </ul>
-                <?php }
-
-                if ($copyright) { ?>
-                    <div class="footer__down footer-down">
-                        ©&nbsp;<?php echo date("Y"); ?>&nbsp; <?php echo $copyright; ?>
-                    </div>
                 <?php } ?>
+
+                <div class="footer__down footer-down">
+                    ©&nbsp;<?php echo date("Y"); ?>&nbsp; <?php echo $copyright; ?>
+
+                    <a class="mt-4" href="/privacy-policy/">Политика конфиденциальности</a>
+                </div>
             </div>
         </div>
     </div>

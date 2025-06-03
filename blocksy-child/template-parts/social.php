@@ -12,14 +12,14 @@ $socials =  get_field('social_icons', 'options');
         <?php
         if( $socials['whatsapp'] ) { ?>
             <li class="social__item">
-                <a href="https://api.whatsapp.com/send?phone=<?php echo $socials['whatsapp']; ?>" target="_blank" class="social__link whatsapp">									
+                <a href="https://api.whatsapp.com/send?phone=<?php echo str_replace([' ', '(', ')', '-', '+'], '', $socials['whatsapp']); ?>" target="_blank" class="social__link whatsapp">									
                 </a>
             </li>
         <?php };						
 
         if( $socials['telegram'] ) { ?>
             <li class="social__item">
-                <a href="https://t.me/+<?php echo $socials['telegram']; ?>" target="_blank" class="social__link telegram">								
+                <a href="https://t.me/<?php echo str_replace([' ', '(', ')', '-', '+'], '',$socials['telegram']); ?>" target="_blank" class="social__link telegram">								
                 </a>
             </li>
         <?php };

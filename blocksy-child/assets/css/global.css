@@ -1133,6 +1133,10 @@ body footer .cta-wrapper .button {
     display: block;
 }
 
+body .fancybox__caption p {
+    color: var(--white);
+}
+
 /*Media*/
 
 @media (min-width:1921px) {}
@@ -2564,6 +2568,10 @@ body footer .cta-wrapper .button {
         width: 138px;
         height: 52px;
         right: 9px;
+    }
+
+    .gradient-dark::before {
+        background: linear-gradient(to right, #38415D 85%, transparent);
     }
 
     .grid-four {

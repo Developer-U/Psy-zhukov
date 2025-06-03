@@ -86,5 +86,5 @@ $slogan_cta_text = get_field('slogan_cta_text', 'options');
         </div>
     </div>
 
-    <span class="d-none d-lg-block hero-wrapper__link"></span>
+    <a class="d-none d-lg-block hero-wrapper__link" href="#competent_38"></a>
 </section>

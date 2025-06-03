@@ -39,7 +39,7 @@ body .accordionjs .acc_section .acc_head span.active {
 }
 
 body .accordionjs .acc_section .acc_content {
-    padding: 0 20px 30px 20px;
+    padding: 0 45px 30px 28px;
 }
 
 body .accordionjs .acc_section.acc_active>.acc_head {

@@ -92,12 +92,20 @@ if (have_rows('new_instrument', $page_id)) {
                         <div class="instrument-wrap__text post">
                             <?php echo $instrument_text; ?>
                         </div>
-                        <?php if ($instrument_button['title'] && $instrument_button['link']) { ?>
-                            <a href="<?php echo $instrument_button['link']; ?>" class="instrument-wrap__btn button action-more"
-                                target="_blank">
-                                <p><?php echo $instrument_button['title']; ?></p>
-                            </a>
-                        <?php } ?>
+                        <?php
+                        if ($instrument_button['type'] == 'аудиозапись') {
+                            echo '<div class="audio-wrap d-flex align-items-center gap-3">';
+                            echo '<p class="fs-4 text">' . $instrument_button['title'] . ': </p>';
+                            echo '<audio src="' . $instrument_button['audio']['url'] . '" controls></audio>';
+                            echo '</div>';
+                        } else {
+                            if ($instrument_button['title'] && $instrument_button['link']) { ?>
+                                <a href="<?php echo $instrument_button['link']; ?>" class="instrument-wrap__btn button action-more"
+                                    target="_blank">
+                                    <p><?php echo $instrument_button['title']; ?></p>
+                                </a>
+                            <?php }
+                        } ?>
                     </div>
                 </div>
             </div>

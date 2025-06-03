@@ -547,6 +547,14 @@
     margin-top: 1rem;
 }
 
+.footer-down a {
+    display: block;
+}
+
+.footer-down a:hover, .footer-down a:focus {
+    color: var(--light-grey);
+}
+
 /*Footer end*/
 
 /*Hero-pages*/
@@ -788,7 +796,7 @@ img.instrument-wrap__icon {
 }
 
 .contact-list {
-    gap: 68px;
+    gap: 32px;
 }
 
 .contacts__item {
@@ -937,7 +945,7 @@ img.instrument-wrap__icon {
     }
 
     .contact-list {
-        gap: 60px;
+        gap: 28px;
     }
 }
 
@@ -1134,10 +1142,6 @@ img.instrument-wrap__icon {
     .contacts-wrap {
         gap: 3rem;
         width: 90%;
-    }
-
-    .contact-list {
-        gap: 54px;
     }
 
     .hero-pages.gallery>.container {
@@ -1566,7 +1570,7 @@ img.instrument-wrap__icon {
     }
 
     .contact-list {
-        gap: 36px;
+        gap: 20px;
     }
 
     .hero-pages.gallery>.container {
@@ -2173,7 +2177,7 @@ img.instrument-wrap__icon {
     }
 
     .results__bg {
-        background-position: bottom right -637px !important;
+        background-position: bottom right -992px !important;
     }
 
     .footer-item.item-1 {
@@ -2240,10 +2244,6 @@ img.instrument-wrap__icon {
 
     .sidebar-wrap__list .service-item {
         width: 80%;
-    }
-
-    .contact-list {
-        gap: 24px;
     }
 
     .contacts__item.address {

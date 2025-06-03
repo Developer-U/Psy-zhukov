@@ -3,12 +3,12 @@
  * Block Competention / блок Компетенции
  * Сквозной
  */
-
 $competent_first_title = get_field('competent_first_title', 'options');
 
 if ($competent_first_title) { ?>
-    <article class="competent-wrap__item competent-box first" data-aos="fade-right" data-aos-offset="0" data-aos-delay="50"
-        data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-anchor-placement="top-left">
+    <article class="competent-wrap__item competent-box first" data-aos="fade-right"
+        data-aos-offset="0" data-aos-delay="50" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-once="true"
+        data-aos-anchor-placement="top-left">
         <h2 class="competent-box__title">
             <?php echo $competent_first_title; ?>
         </h2>

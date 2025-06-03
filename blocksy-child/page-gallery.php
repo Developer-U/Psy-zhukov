@@ -75,7 +75,8 @@ get_template_part('template-parts/hero', 'pages');
 
                                         <a href="<?php echo $gallery_photo_image_part['url']; ?>"
                                             class="gallery-list__item document position-relative list-<?php echo $indexn; ?>"
-                                            data-fancybox="photo_gallery_<?php echo $indexn; ?>">
+                                            data-fancybox="photo_gallery_<?php echo $indexn; ?>"
+                                            data-caption="<?php echo $gallery_photo_text_part; ?>">
 
                                             <?php if ($gallery_photo_text_part) {
                                                 echo '<div class="document__description position-absolute">' . $gallery_photo_text_part . '</div>';
@@ -94,7 +95,7 @@ get_template_part('template-parts/hero', 'pages');
                 } ?>
             </article>
 
-            <article class="gallery-tab-target__target js-targetTabs gallery-tab-target gallery-page__article active"
+            <article class="gallery-tab-target__target js-targetTabs gallery-tab-target gallery-page__article"
                 data-target="1" data-tabTargetReprep="galery_1">
                 <h2 class="gallery-tab-target__title visually-hidden">Видео</h2>
 

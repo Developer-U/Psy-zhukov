@@ -8,10 +8,10 @@ window.addEventListener('DOMContentLoaded', function(){
             enabled: true,
             pageUpDown: true,
         },  
-        // autoplay: {
-        //     delay: 3000,            
-        //     waitForTransition: true,
-        // },
+        autoplay: {
+            delay: 4000,            
+            waitForTransition: true,
+        },
         pagination: {
             el: '.swiper-pagination',
           },
@@ -45,10 +45,10 @@ window.addEventListener('DOMContentLoaded', function(){
             enabled: true,
             pageUpDown: true,
         },          
-        // autoplay: {
-        //     delay: 3000,            
-        //     waitForTransition: true,
-        // },      
+        autoplay: {
+            delay: 3000,            
+            waitForTransition: true,
+        },      
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",

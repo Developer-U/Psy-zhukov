@@ -56,6 +56,10 @@ header .social__link.telegram, .hero .social__link.telegram, .simple-page__top .
     background-image: url('../img/Telegram.svg');
 }
 
+.contacts__item.phone::before {
+    background-image: url('../img/phone.svg');
+}
+
 header .social__link.vk, .hero .social__link.vk, .simple-page__top .social__link.vk {
     background-image: url('../img/vk.svg');
 }

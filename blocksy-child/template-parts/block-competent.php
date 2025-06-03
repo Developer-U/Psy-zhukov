@@ -7,10 +7,11 @@
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
+$page_id = get_the_ID();
 $results_image = get_field('results_image', 'options');
 ?>
 
-<section
+<section id="competent_<?php echo $page_id; ?>"
     class="competent position-relative b-top b-bottom <?php if (is_page('about')) { ?>gradient-heaven heaven2 gradient-dark<?php } else { ?> tree gradient<?php } ?>">
     <?php if (is_page('about')) { ?>
         <div class="results__bg"
