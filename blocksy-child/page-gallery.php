@@ -19,17 +19,21 @@ get_template_part('template-parts/hero', 'pages');
     <div class="container">
         <div class="tabs gallery-tabs">
             <!-- Кнопки-переключатели табов -->
-            <ul class="gallery-tabs__btns gallery-tab-btns gallery-page d-flex gap-2">
-                <li class="gallery-tab-btns__button gallery-page js-pathTabs col-auto active" data-path="0"
-                    data-tabpathrep="galery_0">
-                    Фото
-                </li>
+            <?php
+            // Показываем табы Фото и видео, только если добавлен видео-контент
+            if (have_rows('add_video_block', $page_id)) { ?>
+                <ul class="gallery-tabs__btns gallery-tab-btns gallery-page d-flex gap-2">
+                    <li class="gallery-tab-btns__button gallery-page js-pathTabs col-auto active" data-path="0"
+                        data-tabpathrep="galery_0">
+                        Фото
+                    </li>
 
-                <li class="gallery-tab-btns__button gallery-page js-pathTabs col-auto" data-path="1"
-                    data-tabpathrep="galery_1">
-                    Видео
-                </li>
-            </ul>
+                    <li class="gallery-tab-btns__button gallery-page js-pathTabs col-auto" data-path="1"
+                        data-tabpathrep="galery_1">
+                        Видео
+                    </li>
+                </ul>
+            <?php } ?>
 
             <article class="gallery-tab-target__target js-targetTabs gallery-tab-target gallery-page__article active"
                 data-target="0" data-tabTargetReprep="galery_0">

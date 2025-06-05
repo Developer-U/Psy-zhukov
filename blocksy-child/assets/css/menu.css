@@ -19,8 +19,8 @@
 .header__logo {
     width: 247px;
     position: relative;
-    bottom: -10px;
-    margin-bottom: -20px;
+    /* bottom: -10px;
+    margin-bottom: -20px; */
 }
 
 footer .menu {
@@ -274,15 +274,13 @@ footer .menu li a:hover, footer .menu li a:focus {
 
 /*Media*/
 
-@media (min-width:1921px) {}
-
 @media (max-width:1399px) {
     .header__wrapper {
         gap: 26px;
     }
 
     .header__logo {
-        width: 208px;
+        width: 160px;
     }
 
     #primary-menu li a {
@@ -383,7 +381,7 @@ footer .menu li a:hover, footer .menu li a:focus {
     }
 
     .header__logo {
-        width: 180px;
+        width: 137px;
         justify-self: flex-start !important;
         position: absolute;
         top: 7px;
@@ -488,7 +486,7 @@ footer .menu li a:hover, footer .menu li a:focus {
 
 @media (max-width:767px) {
     .header__logo {
-        width: 110px;
+        width: 130px;
     }
 
     .header-center__nav {
@@ -557,7 +555,7 @@ footer .menu li a:hover, footer .menu li a:focus {
     }
 
     .header__logo {
-        width: 100px;
+        width: 128px;
     }
 
     .header-center__nav {
